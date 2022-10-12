@@ -1,0 +1,81 @@
+lxde-icon-theme (0.5.1-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Sun, 27 Dec 2020 16:39:05 +0100
+
+lxde-icon-theme (0.5.1-2) unstable; urgency=medium
+
+  * Changing Maintainer e-mail to Alioth based one.
+  * Removing override_dh_builddeb target from debian/rules, it fails on 32-bit
+    architectures sometimes.
+  * Using https for VCS fields in debian/control file.
+  * Bump Standards-Version to 3.9.8.
+
+ -- Andriy Grytsenko <andrej@rep.kiev.ua>  Wed, 25 Jan 2017 21:37:43 +0200
+
+lxde-icon-theme (0.5.1-1) unstable; urgency=low
+
+  [ Mateusz Łukasik ]
+  * Remove Daniel Baumann from uploaders (Closes: #704338)
+  * Bump standards-version (no changes needed)
+
+  [ Andriy Grytsenko ]
+  * Updating watch file to support XZ tarball format and non-numeric versions.
+  * Adding myself to Uploaders.
+  * Merging upstream version 0.5.1.
+
+ -- Andriy Grytsenko <andrej@rep.kiev.ua>  Wed, 10 Sep 2014 16:45:56 +0300
+
+lxde-icon-theme (0.5.0-1) unstable; urgency=low
+
+  * Correcting spelling of upstream-name field in copyright file.
+  * Merging upstream version 0.5.0.
+  * Removing git workaround for empty directories, upstream has placed
+    placeholder files.
+
+ -- Daniel Baumann <daniel@debian.org>  Tue, 17 Apr 2012 08:13:02 +0000
+
+lxde-icon-theme (0.0.1+svn20091206-3) unstable; urgency=low
+
+  * Updating maintainer field.
+  * Adding myself to uploaders.
+  * Adding vcs fields.
+  * Removing whitespaces at EOL and EOF.
+  * Updating package to debhelper version 9.
+  * Updating package to standards version 3.9.3.
+  * Updating homepage field.
+  * Rewriting copyright file machine-readable format version 1.0.
+  * Removing debhelper docs file, all files included are not useful.
+  * Removing entry about upload to backports from changelog.
+  * Removing pre-squeeze breaks against lxde-common.
+  * Removing shlibs placeholder from depends.
+  * Decrufting rules file.
+  * Decrufting watch file.
+  * Switching to source format 3.0 (quilt).
+  * Switching to xz compression for both the source and the binary
+    packages.
+  * Rewriting package descriptions.
+  * Creating directories in clean target of rules to workaround gits
+    inability to track empty directories.
+
+ -- Daniel Baumann <daniel@debian.org>  Sun, 15 Apr 2012 13:40:48 +0000
+
+lxde-icon-theme (0.0.1+svn20091206-2) unstable; urgency=high
+
+  * Declare a breaks with lxde-common earlier than 0.5.0-1 version
+    clause to inform higher-level package management tools that
+    lxde-common must be upgraded before lxde-icon-theme. (Closes:581872)
+    Thanks Marvin Renich <mrvn@renich.org>
+  * Set urgency=high since this may unblock lxde-common and it's related
+    packages into testing.
+  * Bumped Standard-version to 3.8.4
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Mon, 17 May 2010 07:58:16 +0800
+
+lxde-icon-theme (0.0.1+svn20091206-1) unstable; urgency=low
+
+  * Initial release (Closes: #561556)
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 18 Dec 2009 16:03:01 +0800

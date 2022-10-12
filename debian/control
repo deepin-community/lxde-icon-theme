@@ -1,0 +1,21 @@
+Source: lxde-icon-theme
+Section: x11
+Priority: optional
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Andrew Lee (李健秋) <ajqlee@debian.org>,
+ Andriy Grytsenko <andrej@rep.kiev.ua>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.8
+Homepage: http://www.lxde.org/
+Vcs-Browser: https://git.lxde.org/gitweb/?p=debian/lxde-icon-theme.git
+Vcs-Git: https://git.lxde.org/git/debian/lxde-icon-theme.git
+
+Package: lxde-icon-theme
+Architecture: all
+Depends: ${misc:Depends}
+Description: LXDE standard icon theme
+ LXDE-Icon-Theme is the standard icon theme for the Lightweight X11 Desktop
+ Environment (LXDE).
+ .
+ It is also known as the nuoveXT2 icon theme from which it is derived from.
